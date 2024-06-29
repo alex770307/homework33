@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 public class SecondTask {
 
@@ -28,13 +29,11 @@ public class SecondTask {
                 .filter(str -> str.length() <= 15)              // Отфилтровать строки длиннее 15 символов
                 .toList();
 
-        String longestString = filteredStrings.stream()
-                .max(Comparator.comparingInt(String::length))   // Найти самую длинную строку среди оставшихся
-                .get();
+        Optional<String> longestString = filteredStrings.stream()
+                        .max(Comparator.naturalOrder());        // Найти самую длинную строку среди оставшихся
 
         System.out.println("\nИсходный текст:\n" + strings);
         System.out.println("\nОтфильтрованные строки :\n" + filteredStrings);
-        System.out.println("\nСамая длинная строка среди отфильтрованных :\n" + longestString);
-
+        System.out.println("\nСамая длинная строка среди отфильтрованных :\n" + longestString.get());
     }
 }
