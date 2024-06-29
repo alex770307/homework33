@@ -31,7 +31,7 @@ public class SecondTask {
                 .toList();
 
         Optional<String> longestString = filteredStrings.stream()
-                        .max(Comparator.naturalOrder());        // Найти самую длинную строку среди оставшихся
+                .max(Comparator.naturalOrder());        // Найти самую длинную строку среди оставшихся
 
         System.out.println("\nИсходный текст:\n" + strings);
         System.out.println("\nОтфильтрованные строки :\n" + filteredStrings);
