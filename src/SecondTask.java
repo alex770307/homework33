@@ -24,6 +24,8 @@ public class SecondTask {
         strings.add("Обсыпает ветки");
         strings.add("Новым серебром.");
 
+        System.out.println("Исходный текст:\n" + strings);
+
         List<String> filteredStrings = strings.stream()
                 .filter(str -> str.length() <= 15)              // Отфилтровать строки длиннее 15 символов
                 .toList();
