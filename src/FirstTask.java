@@ -16,9 +16,9 @@ public class FirstTask {
         System.out.println("Исходный массив :  " + integers);
 
         Optional<Integer> result = integers.stream()
-                .map(x -> x + 15)           //    К каждому числу добавить 15
-                .filter(x -> x > 50)         //    Оставить числа, большие 50
-                .reduce(Integer::sum);    //    Найти сумму чисел
+                .map(x -> x + 15)
+                .filter(x -> x > 50)
+                .reduce(Integer::sum);
         System.out.println("Сумма чисел равна :  " + result.get());
     }
 }

@@ -27,11 +27,11 @@ public class SecondTask {
         strings.add("Новым серебром.");
 
         List<String> filteredStrings = strings.stream()
-                .filter(str -> str.length() <= 15)              // Отфилтровать строки длиннее 15 символов
+                .filter(str -> str.length() <= 15)
                 .toList();
 
         Optional<String> longestString = filteredStrings.stream()
-                .max(Comparator.naturalOrder());        // Найти самую длинную строку среди оставшихся
+                .max(Comparator.naturalOrder());
 
         System.out.println("\nИсходный текст:\n" + strings);
         System.out.println("\nОтфильтрованные строки :\n" + filteredStrings);
