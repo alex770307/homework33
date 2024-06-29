@@ -32,7 +32,7 @@ public class SecondTask {
                 .max(Comparator.comparingInt(String::length))   // Найти самую длинную строку среди оставшихся
                 .get();
 
-        System.out.println("Исходный текст:\n" + strings);
+        System.out.println("\nИсходный текст:\n" + strings);
         System.out.println("\nОтфильтрованные строки :\n" + filteredStrings);
         System.out.println("\nСамая длинная строка среди отфильтрованных :\n" + longestString);
 
