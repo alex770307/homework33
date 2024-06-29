@@ -8,6 +8,7 @@ public class SecondTask {
     public static void main(String[] args) {
 
         List<String> strings = new ArrayList<>();
+
         strings.add("Белая берёза");
         strings.add("Под моим окном");
         strings.add("Принакрылась снегом,");
