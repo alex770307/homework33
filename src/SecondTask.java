@@ -24,8 +24,6 @@ public class SecondTask {
         strings.add("Обсыпает ветки");
         strings.add("Новым серебром.");
 
-        System.out.println("Исходный текст:\n" + strings);
-
         List<String> filteredStrings = strings.stream()
                 .filter(str -> str.length() <= 15)              // Отфилтровать строки длиннее 15 символов
                 .toList();
@@ -34,6 +32,7 @@ public class SecondTask {
                 .max(Comparator.comparingInt(String::length))   // Найти самую длинную строку среди оставшихся
                 .get();
 
+        System.out.println("Исходный текст:\n" + strings);
         System.out.println("Отфильтрованные строки :\n" + filteredStrings);
         System.out.println("\nСамая длинная строка среди отфильтрованных :\n" + longestString);
 
