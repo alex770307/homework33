@@ -19,6 +19,6 @@ public class FirstTask {
                 .map(x -> x + 15)           //    К каждому числу добавить 15
                 .filter(x -> x > 50)         //    Оставить числа, большие 50
                 .reduce(Integer::sum);    //    Найти сумму чисел
-        System.out.println("Сумма чисел равна :  "+result.get());
+        System.out.println("Сумма чисел равна :  " + result.get());
     }
 }
